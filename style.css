@@ -15,14 +15,13 @@ body {
 header {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(#151515, #000);
+    background: #111;
 }
 
 
 .logo {
     width: 200px;
     max-width: 80%;
-    margin-bottom: 20px;
 }
 
 
@@ -34,8 +33,8 @@ header h1 {
 
 
 header p {
-    color: #cccccc;
     font-size: 20px;
+    color: #ccc;
 }
 
 
@@ -48,9 +47,8 @@ header p {
     background: #d4af37;
     color: black;
     text-decoration: none;
-    font-weight: bold;
     border-radius: 30px;
-    font-size: 18px;
+    font-weight: bold;
 }
 
 
@@ -64,21 +62,20 @@ header p {
 nav {
     background: #000;
     padding: 20px;
-    text-align: center;
+    border-bottom: 1px solid #d4af37;
 }
 
 
 .menu {
     display: flex;
     justify-content: center;
-    gap: 35px;
+    gap: 30px;
 }
 
 
 .menu a {
     color: #d4af37;
     text-decoration: none;
-    font-size: 18px;
     font-weight: bold;
 }
 
@@ -97,6 +94,7 @@ nav {
 }
 
 
+
 /* SECTIONS */
 
 section {
@@ -110,8 +108,14 @@ h2 {
     text-align: center;
     color: #d4af37;
     font-size: 35px;
-    margin-bottom: 40px;
 }
+
+
+h3 {
+    color: #d4af37;
+    text-align: center;
+}
+
 
 
 /* ACCUEIL */
@@ -122,11 +126,6 @@ h2 {
 }
 
 
-.accueil p {
-    color: #ccc;
-    font-size: 20px;
-}
-
 
 /* VEHICULES */
 
@@ -136,299 +135,242 @@ h2 {
 
 
 #vehicules img {
+
     width: 90%;
     max-width: 600px;
-    height: 350px;
-    object-fit: cover;
+
     border-radius: 20px;
     border: 2px solid #d4af37;
+
     margin: 20px auto;
     display: block;
-    box-shadow: 0 0 25px rgba(212,175,55,0.4);
 }
 
-
-#vehicules h3 {
-    color: #d4af37;
-    font-size: 28px;
-}
-
-
-#vehicules p {
-    color: #ccc;
-    font-size: 18px;
-}
 
 
 /* TARIFS */
 
-#tarifs {
-    background: #121212;
-    border-radius: 20px;
-    text-align: center;
-}
-
-
-#tarifs p {
-    color: #ccc;
-    font-size: 18px;
-}
-
-
-/* DOCUMENTS */
-
-#documents {
-    text-align: center;
-}
-
-
-#documents p {
-    color: #ccc;
-    font-size: 18px;
-}
-
-
-/* CONTACT */
-
-#contact {
-    background: #121212;
-    border-radius: 20px;
-    text-align: center;
-}
-
-
-#contact p {
-    font-size: 18px;
-}
-
-
-/* FOOTER */
-
-footer {
-    background: black;
-    text-align: center;
-    padding: 25px;
-    color: #888;
-}
-
-
-/* MOBILE */
-
-@media(max-width:700px){
-
-    header h1 {
-        font-size: 32px;
-    }
-
-
-    .menu-btn {
-        display: block;
-        margin: auto;
-    }
-
-
-    .menu {
-        display: none;
-        flex-direction: column;
-        gap: 20px;
-        margin-top: 20px;
-    }
-
-
-    section {
-        padding: 40px 15px;
-    }
-
-
-    #vehicules img {
-        height: 250px;
-    }
-
-}
-/* Effet luxe sur les voitures */
-
-#vehicules img {
-    transition: transform 0.4s, box-shadow 0.4s;
-}
-
-
-#vehicules img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 40px rgba(212,175,55,0.7);
-}
-
-
-/* Effet premium sur les titres */
-
-h2 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-
-/* Lignes dorées décoratives */
-
-h2::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background: #d4af37;
-    margin: 15px auto;
-}
-/* Cartes prestations luxe */
-
 .tarifs-container {
+
     display: flex;
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
+
 }
 
 
 .tarif {
+
     background: #151515;
+
     border: 1px solid #d4af37;
+
     border-radius: 20px;
+
     padding: 30px;
+
     width: 280px;
+
     text-align: center;
-    transition: 0.3s;
+
 }
 
 
-.tarif:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 30px rgba(212,175,55,0.5);
-}
 
-
-.tarif h3 {
-    color: #d4af37;
-    font-size: 25px;
-}
-
-
-.tarif p {
-    color: #ccc;
-    line-height: 1.6;
-}
-/* Menu premium */
-
-nav {
-    border-bottom: 1px solid #d4af37;
-}
-
-
-.menu a {
-    position: relative;
-    transition: 0.3s;
-}
-
-
-.menu a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 0;
-    height: 2px;
-    background: #d4af37;
-    transition: 0.3s;
-}
-
-
-.menu a:hover::after {
-    width: 100%;
-}
-
-
-.menu-btn {
-    cursor: pointer;
-}
-/* Bouton devis */
-
-.bouton-devis {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 15px 35px;
-    background: #d4af37;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 30px;
-    font-size: 18px;
-}
-
-.bouton-devis:hover {
-    background: white;
-}
-
-
-/* Information chauffeur */
+/* INFO CHAUFFEUR */
 
 .info-chauffeur {
-    margin-top: 30px;
+
+    text-align: center;
     color: #ccc;
-    font-size: 18px;
+    margin-top: 30px;
+
 }
-/* Formulaire devis */
+
+
+
+/* BOUTON DEVIS */
+
+.bouton-devis {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 15px 35px;
+
+    background: #d4af37;
+
+    color: black;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+}
+
+
+
+
+/* FORMULAIRE */
 
 #devis {
-    text-align: center;
+
     background: #121212;
+
     border-radius: 20px;
+
+    text-align: center;
+
 }
+
 
 
 form {
+
     max-width: 600px;
+
     margin: auto;
+
 }
+
 
 
 form input,
 form select,
 form textarea {
 
+
     width: 100%;
+
     padding: 15px;
+
     margin: 10px 0;
 
+
     background: #080808;
+
     color: white;
 
+
     border: 1px solid #d4af37;
+
     border-radius: 10px;
 
+
     font-size: 16px;
+
 }
+
 
 
 form textarea {
+
     height: 150px;
-    resize: none;
+
 }
+
 
 
 form button {
 
+
     margin-top: 20px;
+
     padding: 15px 35px;
 
+
     background: #d4af37;
+
     color: black;
 
+
     border: none;
+
     border-radius: 30px;
 
+
     font-size: 18px;
+
     font-weight: bold;
 
     cursor: pointer;
+
 }
 
 
+
 form button:hover {
+
     background: white;
+
+}
+
+
+
+/* CONTACT */
+
+#contact {
+
+    background: #121212;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+}
+
+
+
+/* FOOTER */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    background: black;
+
+    color: #888;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+
+    header h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .menu-btn {
+
+        display: block;
+
+        margin: auto;
+
+    }
+
+
+    .menu {
+
+        display: none;
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
 }
