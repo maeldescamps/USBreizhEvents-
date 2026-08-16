@@ -129,3 +129,21 @@ nav {
     }
 
 }
+/* Bouton appel */
+
+.bouton-appel {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 30px;
+    background: #d4af37;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.bouton-appel:hover {
+    background: white;
+    color: black;
+}
