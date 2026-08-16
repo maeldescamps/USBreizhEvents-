@@ -276,3 +276,40 @@ h2::after {
     background: #d4af37;
     margin: 15px auto;
 }
+/* Cartes prestations luxe */
+
+.tarifs-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+.tarif {
+    background: #151515;
+    border: 1px solid #d4af37;
+    border-radius: 20px;
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+.tarif:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px rgba(212,175,55,0.5);
+}
+
+
+.tarif h3 {
+    color: #d4af37;
+    font-size: 25px;
+}
+
+
+.tarif p {
+    color: #ccc;
+    line-height: 1.6;
+}
