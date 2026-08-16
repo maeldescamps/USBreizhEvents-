@@ -313,3 +313,36 @@ h2::after {
     color: #ccc;
     line-height: 1.6;
 }
+/* Menu premium */
+
+nav {
+    border-bottom: 1px solid #d4af37;
+}
+
+
+.menu a {
+    position: relative;
+    transition: 0.3s;
+}
+
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: #d4af37;
+    transition: 0.3s;
+}
+
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+.menu-btn {
+    cursor: pointer;
+}
