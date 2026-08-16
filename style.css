@@ -245,3 +245,34 @@ footer {
     }
 
 }
+/* Effet luxe sur les voitures */
+
+#vehicules img {
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+
+#vehicules img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 40px rgba(212,175,55,0.7);
+}
+
+
+/* Effet premium sur les titres */
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* Lignes dorées décoratives */
+
+h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #d4af37;
+    margin: 15px auto;
+}
